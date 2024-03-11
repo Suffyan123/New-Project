@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import config from "config";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import LoginContainer from "./client/components/login/login.jsx";
 import Register from "./client/components/register/register.jsx";
-import ForgotPassword from "./client/components/forgot-password";
+// import ForgotPassword from "./client/components/forgot-password";
 
 import AppUniversal from "./admin/app-universal";
 import Category from "./client/components/category.jsx";
@@ -14,7 +14,7 @@ import BuyerUniversal from "./client/components/buyers/buyer-universal.jsx";
 import PalmistUniversal from "./client/components/palmist/palmist-universal.jsx";
 import PalmistProfile from "./client/components/buyers/palmistprofile/index.jsx";
 import AllCategory from "./client/components/allCategory.jsx";
-import Checkout from "./client/components/buyers/checkout/index.jsx";
+// import Checkout from "./client/components/buyers/checkout/index.jsx";
 const AppContainer = function (props) {
   // const config = "/react/template/";
   if (props) {

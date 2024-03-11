@@ -1,5 +1,4 @@
-/* eslint-disable no-constant-condition */
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -16,7 +15,6 @@ import {
   ban_fift_icon8,
   customer_service_1,
   customer_service_2,
-
 } from "../imagepath.jsx";
 import PatientsSection from "./Home/patientsection";
 import Header from "../header.jsx";
@@ -28,7 +26,6 @@ import CosmeticFooter from "./cosmetics/cosmeticfooter.jsx";
 import Bookdoctor from "./homefourcomponets/bookdoctor.jsx";
 import { MdStar } from "react-icons/md";
 const Home = (props) => {
-
   useEffect(() => {
     AOS.init({
       duration: 1200,
@@ -36,7 +33,7 @@ const Home = (props) => {
     });
   }, []);
 
-  const [search, setsearch] = useState();
+  // const [search, setsearch] = useState();
   return (
     <>
       {/* Main Wrapper */}
@@ -60,6 +57,7 @@ const Home = (props) => {
                 >
                   <h2>PSYCHIC READERS & ASTROLOGERS</h2>
                   <h1>Welcome to Seeking Answer</h1>
+                  <h3>This </h3>
                   <h2 className="">
                     <div className="border d-flex rounded-4 position-relative">
                       <i
@@ -101,11 +99,11 @@ const Home = (props) => {
                       <div className="support-consult-right">
                         <h6>24/7 Support</h6>
                         <div className="rating rating-fifteen">
-                          <MdStar size={20} color="#fcb851"  />
-                          <MdStar size={20} color="#fcb851"  />
-                          <MdStar size={20} color="#fcb851"  />
-                          <MdStar size={20} color="#fcb851"  />
-                          <MdStar size={20} color="gray"  />
+                          <MdStar size={20} color="#fcb851" />
+                          <MdStar size={20} color="#fcb851" />
+                          <MdStar size={20} color="#fcb851" />
+                          <MdStar size={20} color="#fcb851" />
+                          <MdStar size={20} color="gray" />
                         </div>
                       </div>
                     </div>
@@ -251,6 +249,7 @@ const Home = (props) => {
               style={{
                 transition: "stroke-dashoffset 10ms linear 0s",
                 strokeDasharray: "307.919px, 307.919px",
+                // eslint-disable-next-line no-constant-condition
                 strokeDashoffset: "228.265" ? "228.265px" : "0.0318383",
               }}
             ></path>
